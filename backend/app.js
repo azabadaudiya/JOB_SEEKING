@@ -36,4 +36,7 @@ db();
 app.use(errorMiddleware);
 app.use(catchAsyncErrors);
 
+app.get("/",(req,res) => {
+    req.json("HELO");
+}
 export default app;
