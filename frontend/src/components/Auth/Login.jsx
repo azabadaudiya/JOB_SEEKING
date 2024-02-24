@@ -20,7 +20,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:8081/api/v1/user/login",
+        "https://job-seeking-tu2k.onrender.com/api/v1/user/login",
         {email, role, password },
         {
           headers: {
