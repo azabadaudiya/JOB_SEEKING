@@ -40,7 +40,7 @@ app.use("/api/v1/application",applicationRouter);
 
 db();
 
-app.use(errorMiddleware);
-app.use(catchAsyncErrors);
 
+app.use(catchAsyncErrors);
+app.use(errorMiddleware);
 export default app;
