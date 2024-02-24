@@ -13,11 +13,13 @@ import { catchAsyncErrors } from "./middlewares/catchAsyncError.js";
 const app= express();
 dotenv.config({path: "./config/config.env"});
 
-app.use(cors({
-    origin: ["*"],
-    methods: ["GET","POST","DELETE","PUT"],
-    credentials:true,
-}));
+// app.use(cors({
+//     origin: ["*"],
+//     methods: ["GET","POST","DELETE","PUT"],
+//     credentials:true,
+// }));
+
+app.use(cors());
 
 app.use(cookieParser());
 app.use(express.json());
