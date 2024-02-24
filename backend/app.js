@@ -14,7 +14,7 @@ const app= express();
 dotenv.config({path: "./config/config.env"});
 
 app.use(cors({
-    origin: ["https://65d9b92d05596cd3b2ae39c7--velvety-bonbon-e3100b.netlify.app/"],
+    origin: ["*"],
     methods: ["GET","POST","DELETE","PUT"],
     credentials:true,
 }));
