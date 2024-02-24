@@ -19,7 +19,12 @@ dotenv.config({path: "./config/config.env"});
 //     credentials:true,
 // }));
 
-app.use(cors());
+//app.use(cors());
+app.use(cors({
+  origin: 'https://jovial-tulumba-5921d2.netlify.app',
+    methods: ["GET","POST","DELETE","PUT"],
+  credentials: true,
+}));
 
 app.use(cookieParser());
 app.use(express.json());
